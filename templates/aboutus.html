@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  
+  <header class="masthead" style="background-image: url('{{url_for('static',filename='img/about-bg.jpg')}}">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Us</h1>
+            <span class="subheading">Meet the Team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>We are Sumith Sigtia and Vidhan Mehta, students of The Oxford College of Engineering at Bommanahalli, Bangalore. As part of our DBMS Mini project for the 5th semester in the AIML Department, B.E., we designed and implemented this Medical Supply Management System.</p>
+        <p>Our aim is to provide an efficient and user-friendly platform for managing medical records, medicines, and products. Feel free to explore and make use of the features we've implemented.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{url_for('static',filename='js/clean-blog.min.js')}}"></script>
+
+</body>
+
+</html>
+{% endblock %}
